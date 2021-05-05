@@ -1,0 +1,32 @@
+.header {
+    background-color: $header_background;
+    letter-spacing: $letter_spacing;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+
+    .navbar-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            display: block;
+            padding: 8px 16px;
+            &:hover {
+                background-color: gray;
+            }
+            .navbar-list-item {
+                text-decoration: none;
+                color: $navbar_item_color;
+            }
+        }
+    }
+}

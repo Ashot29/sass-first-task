@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+@import "nav";
+@import 'architect';
+@import 'houses';
+@import 'contacts';
+@import "form";
+@import "image";
+@import "footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+html, body {
+    font-family: $basic_font;
+    font-size: 15px;
+    line-height: 1.5;
+};
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}

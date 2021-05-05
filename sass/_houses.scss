@@ -1,0 +1,69 @@
+.house-section {
+    .section-header {
+        h2 {
+            @include section-header
+        }
+    }
+
+    .houses {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .house {
+            position: relative;
+            width: 24%;
+            height: 200px;
+            background-image: url(../css/house5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 20px;
+    
+            .house-header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                padding: 8px 16px;
+                background-color: $house_header_background;
+                color: $house_header_text;
+            }
+        }
+
+        .house2 {
+            @extend .house;
+            background-image: url(../css/house2.jpg);
+        }
+
+        .house3 {
+            @extend .house;
+            background-image: url(../css/house3.jpg);
+        }
+
+        .house4 {
+            @extend .house;
+            background-image: url(../css/house4.jpg);
+        }
+
+        .house5 {
+            @extend .house;
+            background-image: url(../css/house2.jpg);
+        }
+
+        .house6 {
+            @extend .house;
+            background-image: url(../css/house5.jpg);
+        }
+
+        .house7 {
+            @extend .house;
+            background-image: url(../css/house4.jpg);
+        }
+
+        .house8 {
+            @extend .house;
+            background-image: url(../css/house3.jpg);
+        }
+    }
+}
